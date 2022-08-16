@@ -12,21 +12,22 @@ function isJavaScriptFile(fileName) {
 
 // 3. Calculate the total oil price that I have to pay
 
-const dieselPrice = 114;
-const prtrolPrice = 130;
-const octanePrice = 90;
 
 function oilPrice(diesel, petrol, octane) {
+  const dieselPrice = 114;
+  const prtrolPrice = 130;
+  const octanePrice = 90;
   return diesel * dieselPrice + petrol * prtrolPrice + octane * octanePrice;
 }
 
 // 4. Public Bus Fare
 
-const perBusSeat = 50;
-const perMicrobusSeat = 11;
-const publicBusPrice = 250;
+
 
 function publicBusFare(people) {
+  const perBusSeat = 50;
+const perMicrobusSeat = 11;
+const publicBusPrice = 250;
   const peopleRemaining = people % perBusSeat;
   const remaingForMicrobus = peopleRemaining % perMicrobusSeat;
   const totalPublicBusCost = publicBusPrice * remaingForMicrobus;
